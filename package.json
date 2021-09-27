@@ -2,6 +2,7 @@
   "scripts": {
     "prebuild": "typescript-json-validator src/type-checker.ts LayerSpec",
     "start": "yarn prebuild && ts-node ./src/index.ts",
+    "start:file": "yarn prebuild && ts-node ./src/index-file.ts",
     "build": "yarn prebuild && tsc"
   },
   "dependencies": {
